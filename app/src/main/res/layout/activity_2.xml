@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
-
+    tools:context=".Activity2">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,97 +25,141 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="@string/banco_titulo"
-            android:textSize="30dp" />
+            android:textSize="30sp"
+            android:textStyle="bold" />
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textTasaNom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/campo_tasa_nom"
+            android:textAlignment="textStart" />
+
+        <EditText
+            android:id="@+id/editTasaNom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textTasaEf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/campo_tasa_ef" />
+
+        <EditText
+            android:id="@+id/editTasaEf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textCapitalInvertir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/campo_capital" />
+
+        <EditText
+            android:id="@+id/editCapitalInvertir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="" />
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBarMeses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:min="0"
+        android:max="12"
+        android:progress="1" />
 
     <TextView
-        android:id="@+id/textoDatos"
+        android:id="@+id/textoDias"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="  30 dias" />
+
+    <CheckBox
+        android:id="@+id/checkBoxRenovacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/renovacion" />
+
+    <TextView
+        android:id="@+id/textoSimulador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/simulador"
         android:textAlignment="center"
-        android:textSize="18dp"
-        android:text="@string/descripcion_datos" />
+        android:textStyle="bold" />
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/textoPlazo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:text="@string/plazo" />
 
-        <TextView
-            android:id="@+id/textoNombre"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/nombre" />
-
-        <EditText
-            android:id="@+id/editNombre"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="12"
-            android:text="" />
-    </LinearLayout>
-
-    <LinearLayout
+    <TextView
+        android:id="@+id/textoCapital"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:text="@string/capital" />
 
-        <TextView
-            android:id="@+id/textoApellido"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/apellido" />
-
-        <EditText
-            android:id="@+id/editApellido"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="12"
-            android:text="" />
-
-    </LinearLayout>
-
-    <LinearLayout
+    <TextView
+        android:id="@+id/textoIntereses"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:text="@string/intereses" />
 
-        <TextView
-            android:id="@+id/textoMoneda"
-            android:layout_width="246dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/moneda" />
+    <TextView
+        android:id="@+id/textoMonto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/monto_tot" />
 
-        <Spinner
-            android:id="@+id/spinnerMoneda"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:textAlignment="center"
-            android:entries="@array/moneda"/>
-    </LinearLayout>
+    <TextView
+        android:id="@+id/textoMontoAnual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/monto_tot_anual" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/botonSimular"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="13dp"
-            android:text="@string/boton_simular"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <LinearLayout
-            android:id="@+id/linearLayout"
+            android:id="@+id/linearLayout2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="1dp"
@@ -127,14 +170,11 @@
             app:layout_constraintStart_toStartOf="parent">
 
             <Button
-                android:id="@+id/botonConstituir"
+                android:id="@+id/botonConfirmar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:enabled="false"
-                android:text="@string/boton_constituir" />
+                android:text="@string/boton_confirmar" />
         </LinearLayout>
-
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 </LinearLayout>

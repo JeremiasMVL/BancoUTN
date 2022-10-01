@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">BancoUTN</string>
+    <string name="boton_simular">SIMULAR</string>
+    <string name="titulo_pantalla_constituir">Constituir Plazo Fijo</string>
+    <string name="nombre"> Nombre</string>
+    <string name="apellido"> Apellido</string>
+    <string name="moneda"> Moneda</string>
+    <string name="moneda_peso">PESOS</string>
+    <string name="descripcion_datos">Para constituir tu plazo fijo necesitamos que nos proveeas algunos datos.</string>
+    <string name="banco_titulo">Banco UTN Santa Fe</string>
+
+    <string name="boton_constituir">CONSTITUIR</string>
+    <string name="boton_confirmar">CONFIRMAR</string>
+    <string name="campo_tasa_nom">  Tasa Nominal Anual</string>
+    <string name="campo_tasa_ef">  Tasa Efectiva Anual</string>
+    <string name="campo_capital">  Capital a invertir ($)</string>
+    <string name="dias"> dias</string>
+    <string name="dias_inicial">30 dias</string>100
+    <string name="titulo_pantalla_simular">Simular plazo fijo</string>
+    <string name="renovacion">Con renovacion automatica</string>
+    <string name="simulador">Simulador Plazo Fijo en Pesos</string>
+    <string name="plazo"> Plazo: </string>
+    <string name="capital"> Capital: </string>
+    <string name="intereses"> Intereses ganados: </string>
+    <string name="monto_tot"> Monto total: </string>
+    <string name="monto_tot_anual"> Monto total anual: </string>
+
+    <string name="piola">PIOLA!</string>
+
 </resources>

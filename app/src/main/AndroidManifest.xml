@@ -10,8 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BancoUTN">
         <activity
+            android:name=".Activity2"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/titulo_pantalla_simular">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:label="@string/titulo_pantalla_constituir">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
